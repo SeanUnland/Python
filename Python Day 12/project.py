@@ -1,13 +1,12 @@
 #Number Guessing Game Objectives:
 
 from art import logo 
-print(logo)
+
 from random import randint
 
 # Global Constant Variables written in all caps
 EASY_LEVEL_TURNS = 10
 HARD_LEVEL_TRUNS = 5
-
 
 # Function to check user's guess against actual answer
 
@@ -32,6 +31,7 @@ def set_difficulty():
         return HARD_LEVEL_TRUNS
         
 def game():
+    print(logo)
     # Choosing a random number between 1 and 100
 
     print(f"Welcome to the Guessing Game")
@@ -48,6 +48,7 @@ def game():
         print(f"You have {turns} attempts remaining to guess the number.")
         # Let the user guess a number
         guess = int(input(f"Make a guess:\n"))
+        # Track the number of turns and reduce by 1 if they get it wrong
         turns = check_answer(guess, answer, turns)
         if turns == 0: 
             print("You've run out of guesses, you lose.")
@@ -55,6 +56,5 @@ def game():
         elif guess != answer: 
             print("Guess again")
 
-# Track the number of turns and reduce by 1 if they get it wrong
 
 game()

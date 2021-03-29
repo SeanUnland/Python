@@ -15,5 +15,6 @@
         "titleBar.inactiveBackground": "#d23aab99",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "#d23aab"
+    "peacock.color": "#d23aab",
+    "python.pythonPath": "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python"
 }

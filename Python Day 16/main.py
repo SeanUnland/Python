@@ -2,10 +2,6 @@
 # from another_module import another_variable
 from turtle import Screen, Turtle
 
-from prettytable import PrettyTable
-
-
-
 # timmy = Turtle()
 # print(timmy)
 # # Object Methods
@@ -21,6 +17,7 @@ from prettytable import PrettyTable
 # print(my_screen.canvheight)
 # my_screen.exitonclick()
 
+from prettytable import PrettyTable
 
-table = prettytable()
+table = PrettyTable()
 print(table)

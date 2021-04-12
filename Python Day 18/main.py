@@ -1,8 +1,6 @@
-from turtle import Turtle, Screen
-from heroes import *
-
-
-
+from turtle import Screen
+import turtle as t
+import random
 
 # imports everything in module using *
 # from turtle import *
@@ -10,28 +8,25 @@ from heroes import *
 # Alias modules import module name as alias name
 # import turtle as t
 
-tim = Turtle()
-tom = Turtle()
-terry = Turtle()
+tim = t.Turtle()
+t.colormode(255)
 
-# tim.shape("turtle")
-# tim.color("#7FFFD4")
+def random_color(): 
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    color = (r, g, b)
+    return color
 
-# for _ in range(4):
-#     tim.forward(100)
-#     tim.right(90)
+tim.speed("fastest")
 
+def draw_spirograph(size_of_gap):
+    for _ in range(int(360 / size_of_gap)): 
+        tim.color(random_color())
+        tim.circle(100)
+        tim.setheading(tim.heading() + size_of_gap)
 
-
-print(heroes.gen())
-
-
-
-
-
-
-
-
+draw_spirograph(5)
 
 
 

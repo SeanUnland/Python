@@ -1,5 +1,6 @@
 from turtle import Turtle, Screen
-import heroes
+from heroes import *
+
 
 
 
